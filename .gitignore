@@ -197,3 +197,6 @@ tags
 
 # End of https://www.toptal.com/developers/gitignore/api/node,vim,macos
 
+
+# custom
+config.json
