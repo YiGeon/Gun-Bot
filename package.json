@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/YiGeon/Gun-Bot/issues"
   },
-  "homepage": "https://github.com/YiGeon/Gun-Bot#readme"
+  "homepage": "https://github.com/YiGeon/Gun-Bot#readme",
+  "dependencies": {
+    "discord.js": "^14.7.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.28.0"
+  }
 }
