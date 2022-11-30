@@ -78,7 +78,7 @@ const getWeather = async () => {
     }
 
   }).catch((error) => {
-    logger.error(error);
+    logger.error(JSON.stringify(error));
     return '날씨 정보를 가져오는데 실패했습니다.';
   });
 };
