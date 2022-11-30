@@ -114,3 +114,7 @@ const parseSky = (sky) => {
     return '알 수 없음';
   }
 };
+
+module.exports = {
+  getWeather,
+};
