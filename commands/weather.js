@@ -7,8 +7,7 @@ module.exports = {
     .setDescription('서울 오늘 날씨를 알려줍니다.'),
   async execute(interaction) {
 
-    const result = getWeather();
-
+    const result = await getWeather();
     await interaction.reply(result);
   },
 };

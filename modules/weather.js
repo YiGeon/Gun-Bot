@@ -25,7 +25,7 @@ const getWeather = async () => {
 
   logger.info(`Getting weather for ${date} ${time}`);
 
-  await axios.get(API_URL, {
+  return await axios.get(API_URL, {
     params: {
       ServiceKey: SERVICE_KEY,
       dataType: DATA_TYPE,
@@ -44,7 +44,7 @@ const getWeather = async () => {
         logger.error('Failed to get weather: ' + data.response.header.resultMsg);
         throw new Error('API 호출 실패');
       }
-      // console.log(JSON.stringify(data));
+
       let items = data.response.body.items;
       items = items.item.filter(i => i.fcstDate == date);
 
