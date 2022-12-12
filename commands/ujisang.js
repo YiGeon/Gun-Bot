@@ -8,7 +8,7 @@ module.exports = {
     // interaction.user is the object representing the User who ran the command
     // interaction.member is the GuildMember object, which represents the user in the specific guild
 
-    const words = ['바보', '천재', '해삼', '말미잘'];
+    const words = ['바보', '멍청이', '해삼', '말미잘', '똥꼬', '똥개'];
 
     // random word from words array
     const word = words[Math.floor(Math.random() * words.length)];
