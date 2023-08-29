@@ -5,16 +5,13 @@ module.exports = {
     .setName('룰렛')
     .setDescription('룰렛 돌리기'),
   async execute(interaction) {
-    // interaction.user is the object representing the User who ran the command
-    // interaction.member is the GuildMember object, which represents the user in the specific guild
+    const slotItems = ['🍇', '🍉', '🍌', '🍎', '🍒', '🍓', '🍑'];
 
-    // random 1~9
-    const first = Math.floor(Math.random() * 9) + 1;
-    const second = Math.floor(Math.random() * 9) + 1;
-    const third = Math.floor(Math.random() * 9) + 1;
+    const slot1 = slotItems[Math.floor(Math.random() * slotItems.length)];
+    const slot2 = slotItems[Math.floor(Math.random() * slotItems.length)];
+    const slot3 = slotItems[Math.floor(Math.random() * slotItems.length)];
 
 
-    await interaction.reply(`🎰 ${first} | ${second} | ${third} 🎰`);
+    await interaction.reply(`🎰 ${slot1} | ${slot2} | ${slot3} 🎰`);
   },
 };
-
