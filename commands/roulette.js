@@ -11,7 +11,6 @@ module.exports = {
     const slot2 = slotItems[Math.floor(Math.random() * slotItems.length)];
     const slot3 = slotItems[Math.floor(Math.random() * slotItems.length)];
 
-
     await interaction.reply(`🎰 ${slot1} | ${slot2} | ${slot3} 🎰`);
   },
 };
